@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dvor_1" />
+
+    <ImageView
+        android:id="@+id/goback"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:background="@drawable/rounded_image"
+        android:gravity="end"
+        android:src="@drawable/chervon_left" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="Doppler VHF Omni Directional Range"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:padding="16dp" />
+    <RelativeLayout
+        android:id="@+id/owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle">
+
+        <ImageView
+            android:id="@+id/adminpic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/rounded_image"
+            android:src="@drawable/admin2" />
+
+        <TextView
+            android:id="@+id/textViewOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/adminpic"
+            android:text="Dhouha Hedhli in Tunisia"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewParagraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="16dp"
+        android:textColor="#888888"
+        android:text="      It is a short/medium-range radio navigation system used to aid aircraft in determining their flight position and direction in relation to their destination using VHF (Very High Frequency) signals between 108.00 to 117.95 MHz sent from a radio beacon"
+        android:textColorHint="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>

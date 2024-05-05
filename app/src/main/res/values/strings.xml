@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">airport_project</string>
+    <string name="title_activity_update_profile">UpdateProfile</string>
+    <string name="dme"><b>Accuracy and Capacity</b> \n Accuracy is primarily a function of the delay: \n
+        \u25CF N9000 introduces max ±0.5 µs to the overall system error budget o 0.5usec means 75 m \n
+        \u25CF Internal system accuracy is ±25 ns (clock for calculating delay) : \n
+        \u25CF 25 ns means 3.75 m accuracy \n
+        \u25CF Note that C = 3.0 x 108 m/s = 0.3m/nsec \n
+        Capacity: \n
+        \u25CF ICAO = aircraft handling capacity of 100 aircraft (interrogators) \n
+        \u25CF N9000 = 200 interrogators, with average interrogation 30 pps each, and
+reply efficiency of > 70%
+    </string>
+    <string name="dme_2"><b>DME includes: </b>\n
+        \u25CF Equipment: the main N9000 Equipment Cabinet is installed at specified locations \n
+        \u25CF Antenna: the Antenna Subsystem including its cables, lightning arrestors, and obstruction light \n
+        \u25CF RCU: the Remote Control Unit that provides remote management to maintenance and technical personnel \n
+        \u25CF RSU: the Remote Status Unit that provides a simple visual indication of the status of the multiple Navaids systems to air traffic controllers, along with ON/OFF control \n
+        \u25CF RMM: the Remote Maintenance and Monitoring software program, which may be run on a local or remote PC, provides a user friendly interface to diagnose or configure the N9000 equipment
+    </string>
+
+    <string name="dme_3">
+        <b> Battery</b> \n
+        4x 12V 40Ah rechargeable sealed lead acid battery: \n
+        \u25CF Absorbent Glass Mat (AGM) technology for superior performance \n
+        \u25CF Valve regulated, spill proof construction allows safe operation in any position \n
+        \u25CF Power/volume ratio yielding unrivalled energy density \n
+        \u25CF Rugged impact resistant ABS case and cover (UL94-HB) \n
+        \u25CF Approved for transport by air. D.O.T., I.A.T.A., F.A.A. and C.A.B. certified
+    </string>
+</resources>
