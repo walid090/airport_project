@@ -14,11 +14,20 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Navigation extends AppCompatActivity {
     public ImageView  imageView;
-    public CardView DvorButton,DmeButton;
+    public CardView DvorButton,DmeButton,InstrementButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        InstrementButton=findViewById(R.id.buttonInstrement);
+        InstrementButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SendToListls();
+            }
+        });
+
+
         DmeButton=findViewById(R.id.DMEButton);
         DmeButton.setOnClickListener(new View.OnClickListener() {
                                          @Override
@@ -54,5 +63,9 @@ public class Navigation extends AppCompatActivity {
         public void goDme(){
                 Intent intent = new Intent(Navigation.this,Article_dme.class);
                 startActivity(intent);
+        }
+        public void    SendToListls(){
+            Intent intent = new Intent(Navigation.this,list_ils.class);
+            startActivity(intent);
         }
 }
